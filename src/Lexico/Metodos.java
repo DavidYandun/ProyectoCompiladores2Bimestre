@@ -32,13 +32,13 @@ public class Metodos {
         //para hacer una separacion. Ya que cuando almacena los tokens los almacena por posicion separandolos por un espacio
         String strDatos;
         FileReader fr;
-        fr = new FileReader("C:\\Users\\DAVID\\Documents\\NetBeansProjects\\Analzador_Lexico_dart\\src\\tokens1.txt");
+        fr = new FileReader("C:\\Users\\DAVID\\Documents\\NetBeansProjects\\ProyectoCompiladores2Bimestre\\src\\Lexico\\tokens1.txt");
         BufferedReader br = new BufferedReader(fr);
         strDatos = br.readLine();
 
         int numTokens = 0;
 
-        StringTokenizer tokens = new StringTokenizer(strDatos, " |\n");
+        StringTokenizer tokens = new StringTokenizer(strDatos, " ");
         int i = 0;
         int nDatos = tokens.countTokens();
         String[] datos = new String[nDatos];
@@ -189,7 +189,7 @@ public class Metodos {
 
     void cargardatos() throws IOException {
         FileReader fr;
-        fr = new FileReader("C:\\Users\\DAVID\\Documents\\NetBeansProjects\\Analzador_Lexico_dart\\src\\tokens1.txt");
+        fr = new FileReader("C:\\Users\\DAVID\\Documents\\NetBeansProjects\\ProyectoCompiladores2Bimestre\\src\\Lexico\\tokens1.txt");
         BufferedReader br = new BufferedReader(fr);
         strDatos = br.readLine();
     }
